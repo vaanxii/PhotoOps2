@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoOps.Web", "PhotoOps.Web\PhotoOps.Web.csproj", "{DBB3621E-D549-4948-840A-3609A00194B8}"
 EndProject
 Global
