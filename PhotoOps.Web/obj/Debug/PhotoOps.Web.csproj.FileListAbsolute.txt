@@ -1,0 +1,7 @@
+C:\Users\Jeric\Documents\GitHub\PhotoOps2\PhotoOps.Web\bin\PhotoOps.Web.dll
+C:\Users\Jeric\Documents\GitHub\PhotoOps2\PhotoOps.Web\bin\PhotoOps.Web.pdb
+C:\Users\Jeric\Documents\GitHub\PhotoOps2\PhotoOps.Web\bin\EntityFramework.dll
+C:\Users\Jeric\Documents\GitHub\PhotoOps2\PhotoOps.Web\bin\EntityFramework.xml
+C:\Users\Jeric\Documents\GitHub\PhotoOps2\PhotoOps.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jeric\Documents\GitHub\PhotoOps2\PhotoOps.Web\obj\Debug\PhotoOps.Web.dll
+C:\Users\Jeric\Documents\GitHub\PhotoOps2\PhotoOps.Web\obj\Debug\PhotoOps.Web.pdb
