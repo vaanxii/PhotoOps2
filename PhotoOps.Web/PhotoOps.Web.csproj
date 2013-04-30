@@ -48,6 +48,8 @@
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -75,6 +77,30 @@
     <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Event.cs">
+      <DependentUpon>PhotoOpsContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PhotoOpsContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhotoOpsContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PhotoOpsContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhotoOpsContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PhotoOpsContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhotoOpsContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Race.cs">
+      <DependentUpon>PhotoOpsContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Racer.cs">
+      <DependentUpon>PhotoOpsContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -140,11 +166,33 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\PhotoOpsContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PhotoOpsContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\PhotoOpsContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhotoOpsContext.edmx</DependentUpon>
+      <LastGenOutput>PhotoOpsContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PhotoOpsContext.edmx.diagram">
+      <DependentUpon>PhotoOpsContext.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\PhotoOpsContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PhotoOpsContext.edmx</DependentUpon>
+      <LastGenOutput>PhotoOpsContext.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
